@@ -3,4 +3,4 @@ deployment:
   tasks:
 
 - export DEPLOYPATH=/home/m8n7jncvl93p/public_html/aandresweb.com/api.music
-- /bin/cp index.html $DEPLOYPATH
+- /bin/cp * $DEPLOYPATH
