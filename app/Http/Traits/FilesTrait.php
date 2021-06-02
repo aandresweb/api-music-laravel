@@ -32,7 +32,7 @@ trait FilesTrait
 
             $file_name_removed_extension = Str::remove($client_original_extension, $client_original_name);
 
-            $file_name = Str::slug($file_name_removed_extension, '-') . '.' . $client_original_extension;
+            $file_name =  public_path() . Str::slug($file_name_removed_extension, '-') . '.' . $client_original_extension;
 
             $file_names[$key] = $file_name;
         }

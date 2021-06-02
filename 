@@ -1,0 +1,47 @@
+[33mcommit 4b11628e6797945bf16846ee46c4bd7963a904c4[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: = <agodinezvizcardo@gmail.com>
+Date:   Wed May 26 02:41:45 2021 -0500
+
+    fix https
+
+[33mcommit 0f885d5c60d11e4ab828a23775345d199bd4f50a[m
+Author: = <agodinezvizcardo@gmail.com>
+Date:   Wed May 26 02:33:38 2021 -0500
+
+    adding envs
+
+[33mcommit badb2749ed91603b327ee0635079b2e03109354b[m
+Author: = <agodinezvizcardo@gmail.com>
+Date:   Wed May 26 02:13:37 2021 -0500
+
+    adding vendor
+
+[33mcommit 3f7eb74311f2602c9fbb29360d521ed23e03a487[m
+Author: = <agodinezvizcardo@gmail.com>
+Date:   Wed May 26 02:07:58 2021 -0500
+
+    adding env variables
+
+[33mcommit c70165396f5e775acec244f22e7a435d661bdc6b[m
+Author: = <agodinezvizcardo@gmail.com>
+Date:   Wed May 26 02:05:26 2021 -0500
+
+    update
+
+[33mcommit 499a999dae214d4e9b08edbb5a2de43918bd6b81[m
+Author: = <agodinezvizcardo@gmail.com>
+Date:   Wed May 26 01:32:36 2021 -0500
+
+    added cpanel.yml
+
+[33mcommit 83abfeaef8d3fa280225c91104607fab9a5b5abd[m
+Author: = <agodinezvizcardo@gmail.com>
+Date:   Sun May 23 22:02:13 2021 -0500
+
+    v1
+
+[33mcommit 04aa31ea4d4751b76fe1e4d85f76073ba4919840[m
+Author: = <agodinezvizcardo@gmail.com>
+Date:   Sun May 23 20:08:18 2021 -0500
+
+    initial commit
