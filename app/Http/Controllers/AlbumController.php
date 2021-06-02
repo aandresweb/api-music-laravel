@@ -30,7 +30,7 @@ class AlbumController extends Controller
      */
     public function store(StoreRequest $request)
     {
-        $album = Album::create($request->except(['cover']) + $this->getFileNames($request, '/uploads/albums/'));
+        $album = Album::create($request->except(['cover']) + $this->getFileNames($request, 'uploads/albums'));
 
         $this->storeFiles($request, ['cover'], 'uploads/albums');
 
@@ -66,7 +66,7 @@ class AlbumController extends Controller
 
             $this->storeFiles($request, ['cover'], 'uploads/albums');
 
-            $album->cover = $this->getFileNames($request)['cover'];
+            $album->cover = $this->getFileNames($request, 'uploads/albums')['cover'];
         }
 
         $album->save();

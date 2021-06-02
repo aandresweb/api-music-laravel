@@ -43,7 +43,7 @@ class TrackController extends Controller
      */
     public function store(StoreRequest $request)
     {
-        $track = Track::create($request->except('track') + $this->getFileNames($request));
+        $track = Track::create($request->except('track') + $this->getFileNames($request, 'uploads/tracks'));
 
         $this->storeFiles($request, ['track'], 'uploads/tracks');
 
@@ -76,7 +76,7 @@ class TrackController extends Controller
 
             $this->storeFiles($request, ['track'], 'uploads/tracks');
 
-            $track->track = $this->getFileNames($request)['track'];
+            $track->track = $this->getFileNames($request, 'uploads/tracks')['track'];
         }
 
         $track->save();

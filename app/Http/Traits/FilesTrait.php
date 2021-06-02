@@ -14,7 +14,12 @@ trait FilesTrait
 
             if (in_array($key, $attributes)) {
 
-                $file_name = $file->getClientOriginalName();
+                $client_original_name       = $file->getClientOriginalName();
+                $client_original_extension  = $file->getClientOriginalExtension();
+
+                $file_name_removed_extension = Str::remove($client_original_extension, $client_original_name);
+
+                $file_name = Str::slug($file_name_removed_extension, '-') . '.' . $client_original_extension;
 
                 $file->move(public_path($path), $file_name);
             };
@@ -32,7 +37,7 @@ trait FilesTrait
 
             $file_name_removed_extension = Str::remove($client_original_extension, $client_original_name);
 
-            $file_name =  env('APP_URL') . $path . Str::slug($file_name_removed_extension, '-') . '.' . $client_original_extension;
+            $file_name =  env('APP_URL') . '/' . $path . '/' . Str::slug($file_name_removed_extension, '-') . '.' . $client_original_extension;
 
             $file_names[$key] = $file_name;
         }
