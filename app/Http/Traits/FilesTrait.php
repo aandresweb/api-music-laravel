@@ -21,7 +21,7 @@ trait FilesTrait
         }
     }
 
-    private function getFileNames($request)
+    private function getFileNames($request, $path)
     {
         $file_names = [];
 
@@ -32,7 +32,7 @@ trait FilesTrait
 
             $file_name_removed_extension = Str::remove($client_original_extension, $client_original_name);
 
-            $file_name =  env('APP_URL')  . Str::slug($file_name_removed_extension, '-') . '.' . $client_original_extension;
+            $file_name =  env('APP_URL') . $path . Str::slug($file_name_removed_extension, '-') . '.' . $client_original_extension;
 
             $file_names[$key] = $file_name;
         }
